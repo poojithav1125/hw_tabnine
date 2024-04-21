@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing Website</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header button {
+            margin-left: 10px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .house-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .house-card {
+            width: 300px;
+            height: 400px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .house-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .house-card h2 {
+            margin-top: 20px;
+        }
+
+        .house-card p {
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        form label {
+            margin-top: 10px;
+        }
+
+        form input,
+        form select {
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        form button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Housing Website</h1>
+        <button>Home</button>
+        <button>Houses</button>
+    </header>
+
+    <main>
+        <h2>Houses List</h2>
+        <div class="house-list">
+            <div class="house-card">
+                <img src="house1.jpg" alt="House 1">
+                <h2>House 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel mauris euismod, euismod nisi vel, bibendum nunc. Nulla facilisi. Nullam eget nisi vel nisi aliquet bibendum. Nullam eget nisi vel nisi aliquet bibendum.</p>
+            </div>
+            <div class="house-card">
+                <img src="house2.jpg" alt="House 2">
+                <h2>House 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel mauris euismod, euismod nisi vel, bibendum nunc. Nulla facilisi. Nullam eget nisi vel nisi aliquet bibendum. Nullam eget nisi vel nisi aliquet bibendum.</p>
+            </div>
+            <div class="house-card">
+                <img src="house3.jpg" alt="House 3">
+                <h2>House 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel mauris euismod, euismod nisi vel, bibendum nunc. Nulla facilisi. Nullam eget nisi vel nisi aliquet bibendum. Nullam eget nisi vel nisi aliquet bibendum.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Housing Website. All rights reserved.</p>
+    </footer>
+
+    <form>
+        <h2>Contact Us</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function goToHome() {
+            window.location.href = "home.html";
+        }
+
+        function goToHouses() {
+            window.location.href = "houses.html";
+        }
+
+        function submitForm() {
+            alert("Form submitted successfully!");
+        }
+        // JavaScript code can be added here if needed
+    </script>
+</body>
+</html>
